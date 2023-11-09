@@ -1,0 +1,583 @@
+body{
+    background-image: url("clouds.gif");
+    background-size: 100%;
+    margin-bottom:25px;
+    background-attachment: fixed;
+}
+.splash{
+    display:flex; 
+    align-items: center; 
+    flex-direction:column; 
+    justify-content: flex-start;
+}
+.splash > img{
+    width: 600px;
+}
+h1{
+    color: black; 
+    -webkit-text-stroke: 0.2px white; 
+    font-family: 'Mukta', sans-serif;
+    font-size: x-large; 
+    margin: 0px;
+}
+.navbar{
+    background-color: darkslateblue;
+    position: sticky; 
+    left:0; 
+    top: 0; 
+    width: 100%; 
+    font-family: 'Mukta', sans-serif; 
+    font-size: xx-large;
+    padding: 0px; 
+    margin-top: 0px;
+}
+.navbar > a > img{
+    width: 60px
+}
+.nav{
+    float:right; 
+    margin-left: 20px; 
+    position:sticky
+}
+p{
+    text-align: center;
+    font-family: 'Mukta', sans-serif; 
+    padding: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+.footer{
+    background-color: black; 
+    position: fixed; 
+    left: 0; 
+    bottom: 0;
+    width: 100%; 
+    text-align: center;
+}
+a.nav:link{
+    color: orangered; 
+    -webkit-text-stroke: 0.2px white; 
+    text-decoration: none;
+    font-size: xx-large;
+}
+a.nav:hover{
+    color: yellow; 
+    font-size: xx-large;
+}
+a.nav:visited{
+    color: orangered; 
+    -webkit-text-stroke: 0.2px white;
+    text-decoration: none;
+    font-size: xx-large;
+}
+a.navl:link{
+    color: orangered; 
+    -webkit-text-stroke: 0.2px white;
+    text-decoration: none; 
+    font-size: xx-large;
+}
+a.navl:hover{
+    color: yellow; 
+    font-size: xx-large;
+}
+a.navl:visited{
+    color: orangered;
+    -webkit-text-stroke: 0.2px white; 
+    font-size: xx-large;
+}
+a.foot:link{
+    color: orangered; 
+    font-size: large;
+}
+a.foot:hover{
+    color: yellow; 
+    font-size: large;
+}
+a.foot:visited{
+    color: orangered; 
+    font-size: large;
+}
+a:link{
+    color: orangered; 
+    -webkit-text-stroke: 0.2px black; 
+    font-size: xx-large;
+}
+a:hover{
+    color: yellow; 
+    font-size: xx-large;
+}
+a:visited{
+    color: orangered; 
+    -webkit-text-stroke: 0.2px black; 
+    font-size: xx-large;
+}
+.foot{
+    color: orangered; 
+    font-family: 'Mukuta', sans-serif; 
+    font-size: small; 
+    margin-left: 50px; 
+    margin-right: 50px;
+}
+h2{
+    -webkit-text-stroke: 0.2px white; 
+    font-family: 'Mukta', sans-serif; 
+    font-size: x-large; 
+    text-align: center;
+}
+#battle{
+    margin-left: auto; 
+    margin-right: auto;
+}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(24, 1fr);
+    justify-items: center;
+}
+.splash{
+    grid-column: 7/ span 6;
+    text-align: center;
+}
+.splash > img{
+    max-height: 240px;
+}
+.body-text{
+    grid-column: 1/ span 18;
+}
+.how{
+    width: 90%;
+    padding-top: 20%;
+    grid-column: 6/ span 4;
+    font-family: 'Mukta', sans-serif; 
+    text-align: center;
+    border: solid;
+    border-color:azure;
+    border-radius: 15%;
+    background-color:azure;
+    opacity: 0.8;
+}
+.why{
+    width: 90%;
+    padding-top: 10%;
+    grid-column: 2/ span 4;
+    font-family: 'Mukta', sans-serif; 
+    text-align: center;
+    border: solid; 
+    border-color:azure;
+    border-radius: 15%;
+    background-color:azure;
+    opacity: 0.8;
+}
+.history{
+    width: 90%;
+    grid-column: 10/ span 4;
+    font-family: 'Mukta', sans-serif;  
+    text-align: center;
+    border: solid;
+    border-color:azure;
+    border-radius: 15%;
+    background-color:azure;
+    opacity: 0.8;
+}
+.quizButton{
+    width: 90%;
+    grid-column: 14/ span 4;
+    font-family: 'Mukta', sans-serif;  
+    text-align: center;
+    border: solid;
+    border-color:azure;
+    border-radius: 15%;
+    background-color:azure;
+    opacity: 0.8;
+}
+.quizForm{
+    grid-column: 1 / span 18;
+    font-family: 'Mukta', sans-serif;
+    font-size: xx-large;
+    border: solid;
+    color: orangered;
+    text-align: center;
+    background-color:azure;
+    opacity: 0.8;
+}
+.submitButton{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: orangered;
+    font-family: 'Mukta', sans-serif;
+    font-size: xx-large;
+
+}
+.sidebar{
+    grid-area: 1 / 19 / 5 / 25;
+}
+.sidebar > ul{
+    list-style-type: none;
+    text-align: center;
+    margin-right: 40px;
+}
+.sidebar > ul > li{
+    color: orangered; 
+    font-family: 'Mukuta', sans-serif; 
+    font-size: medium;
+    text-decoration: none;
+    border: solid;
+    border-color:azure;
+    opacity: 0.8;
+    border-radius: 15%;
+    background-color:azure;
+    margin: 10px; 
+}
+.multiple-image{
+    grid-column: span 6;
+    width: 100%;
+    max-height: 100%;
+}
+.multiple-image > img{
+    Width: 100%;
+    padding: 5%;
+}
+.dual-image-left{
+    grid-column: 1 / span 9;
+    max-width: 100%;
+    max-height: 100%;
+}
+.dual-image-left > img{
+    width: 100%;
+    padding: 5%;
+}
+.dual-image-right > img{
+    width: 100%;
+    padding: 5%;
+}
+.dual-image-right{
+    grid-column: 10 / span 9;
+    max-width: 100%;
+    max-height: 100%;
+}
+.single-image{
+    grid-column: 3/ span 14;
+}
+.single-image > img{
+    max-height: 300px;
+    padding: 5%;
+}
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(18, 1fr);
+    }
+    .sidebar{
+        grid-area: 20 / 1 / 25 / 18;
+        width: 90;
+    }
+    .sidebar > ul{
+        list-style-type: none;
+        text-align: center;
+        margin-bottom: 50px;
+        width: 90;
+    }
+    .sidebar > ul > li{
+        color: orangered; 
+        font-family: 'Mukuta', sans-serif; 
+        font-size: medium;
+        text-decoration: none;
+        border: solid;
+        border-color:azure;
+        opacity: 0.8;
+        border-radius: 15%;
+        background-color:azure;
+        margin: 10px; 
+        width: 100%;
+    }
+    .splash{
+        grid-column: 7/ span 6;
+        text-align: center;
+    }
+    .body-text{
+        grid-column: 1/ span 18;
+    }
+    .how{
+        width: 80%;
+        padding-top: 5%;
+        grid-column: 7/ span 6;
+        font-family: 'Mukta', sans-serif; 
+        text-align: center;
+        border: solid;
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .why{
+        width: 80%;
+        grid-column: 1/ span 6;
+        font-family: 'Mukta', sans-serif; 
+        text-align: center;
+        border: solid; 
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .history{
+        width: 80%;
+        grid-column: 13/ span 6;
+        font-family: 'Mukta', sans-serif;  
+        text-align: center;
+        border: solid;
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .quizButton{
+        width: 80%;
+        grid-column: 13/ span 6;
+        font-family: 'Mukta', sans-serif;  
+        text-align: center;
+        border: solid;
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .nav{
+        float:right; 
+        margin-left: 30px; 
+        position:sticky
+    }
+    a.nav:link{
+        color: orangered; 
+        -webkit-text-stroke: 0.2px white; 
+        text-decoration: none;
+        font-size: medium;
+    }
+    a.nav:hover{
+        color: yellow; 
+        font-size: medium;
+    }
+    a.nav:visited{
+        color: orangered; 
+        -webkit-text-stroke: 0.2px white;
+        text-decoration: none;
+        font-size: medium;
+    }
+    a.navl:link{
+        color: orangered; 
+        -webkit-text-stroke: 0.2px white;
+        text-decoration: none; 
+        font-size: medium;
+    }
+    a.navl:hover{
+        color: yellow; 
+        font-size: medium;
+    }
+    a.navl:visited{
+        color: orangered;
+        -webkit-text-stroke: 0.2px white; 
+        font-size: medium;
+    }
+    .navbar > a > img{
+        width: 50px
+    }
+    .nav{
+        float:right; 
+        margin-left: 20px;
+        margin-top: 18px;
+        position: sticky
+    }
+    .quizForm{
+        grid-column: 1 / span 18;
+        font-family: 'Mukta', sans-serif;
+        font-size: medium;
+        border: solid;
+        color: orangered;
+        text-align: center;
+        background-color:azure;
+        opacity: 0.8;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+    .splash > img{
+        max-width: 100%;
+    }
+    .sidebar{
+        grid-area: 20 / 1 / 25;
+    }
+    .sidebar > ul{
+        list-style-type: none;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .sidebar > ul > li{
+        color: orangered; 
+        font-family: 'Mukuta', sans-serif; 
+        font-size: small;
+        text-decoration: none;
+        border: solid;
+        border-color:azure;
+        opacity: 0.8;
+        border-radius: 15%;
+        background-color:azure;
+        margin: 10px; 
+        width: 90%;
+    }
+    .splash{
+        grid-column: 1;
+        text-align: center;
+        max-width: 90%;
+    }
+    .body-text{
+        grid-column: 1;
+    }
+    .how{
+        width: 80%;
+        padding-top: 5%;
+        grid-column: 1;
+        font-family: 'Mukta', sans-serif; 
+        text-align: center;
+        border: solid;
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .why{
+        width: 80%;
+        grid-column: 1;
+        font-family: 'Mukta', sans-serif; 
+        text-align: center;
+        border: solid; 
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .history{
+        width: 80%;
+        grid-column: 1;
+        font-family: 'Mukta', sans-serif;  
+        text-align: center;
+        border: solid;
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .quizButton{
+        width: 80%;
+        grid-column: 1;
+        font-family: 'Mukta', sans-serif;  
+        text-align: center;
+        border: solid;
+        border-color:azure;
+        border-radius: 15%;
+        background-color:azure;
+        opacity: 0.8;
+    }
+    .multiple-image{
+        grid-column: 1;
+        width: 90%;
+        max-height: 100%;
+    }
+    .multiple-image > img{
+        Width: 90%;
+        padding: 5%;
+    }
+    .dual-image-left{
+        grid-column: 1;
+        max-width: 90%;
+        max-height: 100%;
+    }
+    .dual-image-left > img{
+        width: 90%;
+        padding: 5%;
+    }
+    .dual-image-right > img{
+        width: 90%;
+        padding: 5%;
+    }
+    .dual-image-right{
+        grid-column: 1;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .single-image{
+        grid-column: 1;
+    }
+    .single-image > img{
+        max-height: 300px;
+        max-width: 600px;
+        padding: 5%;
+    }
+    .navbar{
+        background-color: darkslateblue;
+        position: sticky; 
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        font-family: 'Mukta', sans-serif; 
+        font-size: small;
+        padding: 0px; 
+        margin-top: 0px;
+    }
+    .nav{
+        float:right; 
+        margin-left: 10px;
+        margin-top: 18px;
+        position: sticky
+    }
+    a.nav:link{
+        color: orangered; 
+        -webkit-text-stroke: 0.2px white; 
+        text-decoration: none;
+        font-size: small;
+    }
+    a.nav:hover{
+        color: yellow; 
+        font-size: small;
+    }
+    a.nav:visited{
+        color: orangered; 
+        -webkit-text-stroke: 0.2px white;
+        text-decoration: none;
+        font-size: small;
+    }
+    a.navl:link{
+        color: orangered; 
+        -webkit-text-stroke: 0.2px white;
+        text-decoration: none; 
+        font-size: small;
+    }
+    a.navl:hover{
+        color: yellow; 
+        font-size: small;
+    }
+    a.navl:visited{
+        color: orangered;
+        -webkit-text-stroke: 0.2px white; 
+        font-size: small;
+    }
+    .navbar > a > img{
+        width: 30px
+    }
+    .quizForm{
+        grid-column: 1;
+        font-family: 'Mukta', sans-serif;
+        font-size: small;
+        border: solid;
+        color: orangered;
+        text-align: center;
+        background-color:azure;
+        opacity: 0.8;
+    }
+}

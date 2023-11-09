@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content = "A homepage showing the Skies of Arcadia logo over a cloud background with links to several other pages">
+    <meta name = "keywords" content = "games, gaming, remake">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" type = "image/png" href = "ship.png">
+    <title>Website project</title>
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <nav>
+    <div class = "navbar">
+        <a href = "index.html"><img src="Skies_of_Arcadia_Logo.png" alt="Skies of Arcadia logo" ></a>
+        <a href = "index.html" class = "navl">The Case for a Remake</a>
+        <a href = "history.html" class = "nav">History</a>
+        <a href = "how.html"; class = "nav">How</a>
+        <a href = "why.html"; class = "nav">Why</a>
+        <a href = "quiz.html"; class = "nav">Quiz</a>
+    </div>
+    </nav>
+    <main class = "grid-container">
+        <section class="quizForm">
+        <form name = "quiz">
+            <fieldset>
+                <legend>What is the name of the first S. Move Vyse can learn?</legend>
+                <input type="radio" name="firstSMove" value="cutlassFury" id="cutlassFury">
+                <label for="cutlassFury">Cutlass Fury</label>
+                <input type="radio" name="firstSMove" value="alphaStorm" id="alphaStorm">
+                <label for="alphaStorm">Alpha Storm</label>
+                <input type="radio" name="firstSMove" value="rainOfSwords" id="rainOfSwords">
+                <label for="rainOfSwords">Rain Of Swords</label>
+                <input type="radio" name="firstSMove" value="judgement" id="judgement">
+                <label for="judgement">Judgement</label>
+            </fieldset>
+            <fieldset>
+                <legend>What is the name of the first ship you can fly in the game?</legend>
+                <input type="radio" name="firstShip" value="delphinus" id="delphinus">
+                <label for="delphinus">The Delphinus</label>
+                <input type="radio" name="firstShip" value="littleJack" id="littleJack">
+                <label for="littleJack">The Little Jack</label>
+                <input type="radio" name="firstShip" value="albatross" id="albatross">
+                <label for="albatross">The Albatross</label>
+                <input type="radio" name="firstShip" value="claudia" id="claudia">
+                <label for="claudia">The Claudia</label>
+            </fieldset>
+            <fieldset>
+                <legend>What is the name of the items Cupil can use to get stronger?</legend>
+                <input type="radio" name="cupilFood" value="choms" id="choms">
+                <label for="choms">Choms</label>
+                <input type="radio" name="cupilFood" value="moonfish" id="moonfish">
+                <label for="moonfish">Moonfish</label>
+                <input type="radio" name="cupilFood" value="chams" id="chams">
+                <label for="chams">Chams</label>
+                <input type="radio" name="cupilFood" value="moonberries" id="moonberries">
+                <label for="moonberries">Moonberries</label>
+            </fieldset>
+            <fieldset>
+                <legend>What is the name of the final boss?</legend>
+                <input type="radio" name="finalBoss" value="zelos" id="zelos">
+                <label for="zelos">Zelos</label>
+                <input type="radio" name="finalBoss" value="ramirez" id="ramirez">
+                <label for="ramirez">Ramirez</label>
+                <input type="radio" name="finalBoss" value="admiralGalcian" id="admiralGalcian">
+                <label for="admiralGalcian">Admiral Galcian</label>
+                <input type="radio" name="finalBoss" value="princeEnrique" id="princeEnrique">
+                <label for="princeEnrique">Prince Enrique</label>
+            </fieldset>
+            <br>
+            <button type="button" onclick="checkAnswers()" class="submitButton">Submit</button>
+        </form>
+        </section>
+    <aside class="sidebar">
+        <ul>
+            <li><a href = "https://en.wikipedia.org/wiki/Skies_of_Arcadia" target="_blank"> Learn more about Skies of Arcadia on Wikipedia</a></li>
+            <li><a href = "https://www.facebook.com/profile.php?id=100083159453730" target="_blank"> Join the community on Facebook</a></li>
+            <li><a href = "https://www.reddit.com/r/skiesofarcadia/" target="_blank"> Join the community on Reddit</a></li>
+        </ul>
+    </aside>
+    </main>
+    <footer>
+    <div class="footer">
+        <p class="foot">Skies of Arcadia is owned by Sega Corporation, all Skies of Arcadia images used on this site are used under UK fair dealing provisions</p>
+    </div>
+    </footer>
+</body>
