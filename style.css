@@ -273,12 +273,14 @@ h2{
     .sidebar{
         grid-area: 20 / 1 / 25 / 18;
         width: 90;
+        max-width: 100%;
     }
     .sidebar > ul{
         list-style-type: none;
         text-align: center;
         margin-bottom: 50px;
         width: 90;
+        max-width: 100%;
     }
     .sidebar > ul > li{
         color: orangered; 
@@ -292,6 +294,7 @@ h2{
         background-color:azure;
         margin: 10px; 
         width: 100%;
+        max-width: 100%;
     }
     .splash{
         grid-column: 7/ span 6;
@@ -399,6 +402,7 @@ h2{
         text-align: center;
         background-color:azure;
         opacity: 0.8;
+        max-width: 100%;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -417,6 +421,7 @@ h2{
         list-style-type: none;
         text-align: center;
         margin-bottom: 100px;
+        max-width: 100%;
     }
     .sidebar > ul > li{
         color: orangered; 
@@ -430,6 +435,7 @@ h2{
         background-color:azure;
         margin: 10px; 
         width: 90%;
+        max-width: 100%;
     }
     .splash{
         grid-column: 1;
@@ -579,5 +585,6 @@ h2{
         text-align: center;
         background-color:azure;
         opacity: 0.8;
+        max-width: 100%;
     }
 }
